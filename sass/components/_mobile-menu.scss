@@ -1,0 +1,32 @@
+.mobile-menu {
+    position: fixed;
+    
+    z-index: 10;
+    top:0;
+    width: 100vw;
+    height: 100%;
+    padding: 48px 40px;
+
+    background-color:#ffffff;
+
+    transition: opacity 250ms $basicCubic;
+}
+.mobile-btn {
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    @include hover-accent();
+    &__icons {
+        fill:currentColor;
+        background:transparent;
+        
+    }
+    &--close {
+        position: absolute;
+        top:10px;
+        right: 15px;
+        z-index: 15;
+    }
+}
+
+

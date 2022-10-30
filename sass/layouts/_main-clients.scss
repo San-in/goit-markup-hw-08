@@ -14,7 +14,7 @@
         border-color: $colorIcon;
         border-radius: 4px;
 
-        @include hover-clietns();
+        @include hover-cards();
     }
     &__vector {
         fill:currentColor;

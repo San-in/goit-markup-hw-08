@@ -49,8 +49,7 @@
       letter-spacing: 0.01em;
     }
     &__btn {
-      @extend %btn;
-      padding: 10px 52px;
+        padding: 10px 52px;
 
     }
 }

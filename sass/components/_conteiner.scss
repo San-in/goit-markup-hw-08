@@ -1,5 +1,13 @@
 .conteiner {
     margin: 0 auto;
     padding: 0 15px;
-    width: 1200px;
+    max-width: $widthMobile;
+    @media  screen and (min-width:$widthTablet) {
+        width: $widthTablet;
+        max-width: none;
+    }
+    @media  screen and (min-width:$widthDesktop) {
+        width: $widthDesktop;
+    }
+
 }

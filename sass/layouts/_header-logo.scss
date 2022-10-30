@@ -2,12 +2,14 @@
     border-bottom: 1px solid #ececec;
     &__conteiner {
         @include flex-center();
-    }
+        position: relative;
+            }
     &__logo {
-        @extend %logo;
-        margin-right: 93px;
-        padding-top: 24px;
-        padding-bottom: 25px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        // margin-right: 93px;
+        // padding-top: 24px;
+        // padding-bottom: 25px;
         color: #000000;
     }
     &__text--accent {
