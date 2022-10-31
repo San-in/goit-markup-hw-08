@@ -1,7 +1,8 @@
 .benefits {
     &__list {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
+        
     }
     &__img {
         display: flex;
@@ -16,13 +17,19 @@
         line-height: calc(16 / 14);
         text-transform: uppercase;
         color: $textColorBold;
+        text-align: center;
+
+
+
+
     }
 }
 
 .benefits__item {
-    flex-basis: calc((100% - 90px) / 4);
+    // flex-basis: calc((100% - 90px) / 4);
     &:not(:last-child) {
-        margin-right: 30px;
+        // margin-right: 30px;
+        margin-bottom: 30px;
     }
 }
 

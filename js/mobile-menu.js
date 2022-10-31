@@ -3,6 +3,8 @@
     const desktopMenu = document.querySelector('.desktop-menu');
     const openMenuBtn = document.querySelector('.mobile-btn--open');
     const closeMenuBtn = document.querySelector('.mobile-btn--close');
+    const additionalInfo = document.querySelector('.works');
+
   
     const toggleMenu = () => {
       const isMenuOpen =
@@ -25,6 +27,8 @@
     // Close the mobile menu on wider screens if the device orientation changes
     window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
       if (!e.matches) return;
+      
+      additionalInfo.classList.remove('is-hidden');
       mobileMenu.classList.remove('is-open');
       desktopMenu.classList.remove('is-hidden');
       openMenuBtn.classList.toggle('is-hidden');
@@ -35,6 +39,8 @@
       if (!e.matches) return;
           desktopMenu.classList.toggle('is-hidden');
           openMenuBtn.classList.remove('is-hidden');
+          additionalInfo.classList.toggle('is-hidden');
+          
     });
   })();
 

@@ -90,17 +90,17 @@ button {
 .conteiner {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 480px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 768px;
+    width: 738px;
     max-width: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 1200px;
+    width: 1170px;
   }
 }
 
@@ -112,12 +112,12 @@ button {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 .section__title {
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   color: #212121;
 }
@@ -204,6 +204,17 @@ button {
   }
 }
 
+.section {
+  padding: 60px 0;
+}
+.section__title {
+  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  text-align: center;
+  color: #212121;
+}
+
 .contact-header {
   font-weight: 500;
   font-size: 24px;
@@ -286,4 +297,55 @@ button {
 
 .active {
   color: #2196f3;
+}
+
+.hero {
+  max-width: 480px;
+  padding: 118px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/hero-bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero__title {
+  max-width: 360px;
+  margin: 0 auto 30px;
+  font-size: 26px;
+  line-height: 1.62;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero__btn {
+  padding: 10px 24px;
+}
+
+.benefits__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+.benefits__subtitle {
+  margin-bottom: 10px;
+  line-height: 1.1428571429;
+  text-transform: uppercase;
+  color: #212121;
+  text-align: center;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
