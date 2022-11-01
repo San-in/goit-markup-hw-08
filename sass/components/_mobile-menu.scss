@@ -10,6 +10,11 @@
     background-color:#ffffff;
 
     transition: opacity 250ms $basicCubic;
+
+    @media screen and (orientation:landscape) {
+        display: none;
+        
+    }
 }
 .mobile-btn {
     margin-left: auto;

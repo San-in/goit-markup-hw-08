@@ -1,9 +1,11 @@
 .footer-links {
+    margin-bottom: 60px;
 
     &__appeal {
         display: inline-block;
         margin-bottom: 20px;
-        line-height: calc(24 / 14);
+        // line-height: calc(24 / 14);
+        line-height: calc(16 / 14);
         text-transform: uppercase;
         color: #ffffff;
     }

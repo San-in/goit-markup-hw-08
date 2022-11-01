@@ -1,6 +1,8 @@
 .clients {
     &__list {
         @include flex-center();
+        gap: 30px;
+        flex-wrap: wrap;
     }
     &__link {
         @include flex-center();
@@ -22,9 +24,10 @@
 }
 
 .clients__item {
-    width: 170px;
+    flex-basis: calc((100% - 60px) / 2);
+    // width: 170px;
     height: 92px;
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+    // &:not(:last-child) {
+    //     margin-right: 30px;
+    // }
 }

@@ -14,8 +14,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  padding: 40px 39px 40px 41px;
+  // width: 528px;
+  max-width: 450px;
+  // padding: 40px 39px 40px 41px;
+  padding: 40px;
   text-align: center;
 
   background-color: #ffffff;
@@ -31,6 +33,7 @@
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 50%;
       @include hover-accent();
+      
 		}
 		&__close-vector {
       fill: currentColor;
@@ -39,7 +42,8 @@
 		&__title {
       margin-bottom: 30px;
       font-size: 20px;
-      line-height: calc(23 / 20);
+      line-height: calc(30 / 20);
+      // line-height: calc(23 / 20);
     
       color: $textColorBold;
 		}
@@ -50,7 +54,6 @@
     }
     &__btn {
         padding: 10px 52px;
-
     }
 }
 

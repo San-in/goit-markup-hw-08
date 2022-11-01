@@ -2,8 +2,9 @@
     background-color: $bgColorDarkGrey;
     padding: 60px 0;
     &__wrap {
-    display: flex;
-    align-items: baseline;
+        text-align: center;
+    // display: flex;
+    // align-items: baseline;
     }
     &__logo {
     display: inline-block;
@@ -15,7 +16,8 @@
     }
 }
 .address {
-    margin-right: 70px;
+    // margin-right: 70px;
+    margin-bottom: 60px;
     &__list {
         color: #ffffff;
     }
@@ -28,9 +30,17 @@
 }
 
 .address__item {
-    &:not(:last-child) {
-        margin-bottom: 9px;
+    // &:not(:last-child) {
+    //     margin-bottom: 9px;
+    // }
+
+    &:first-child {
+        margin-bottom: 5px;
     }
+    &:nth-child(2) {
+        margin-bottom: 8px;
+    }
+
     &:nth-child(n + 2){
         opacity: 0.6;
     }
