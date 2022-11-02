@@ -4,15 +4,17 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding: 0 15px;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms $basicCubic,
   visibility 250ms $basicCubic;
 }
 .modal-form {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  // position: absolute;
 
   // width: 528px;
   max-width: 450px;
@@ -46,15 +48,25 @@
       // line-height: calc(23 / 20);
     
       color: $textColorBold;
+      @media screen and (max-width:337px) {
+        font-size: 18px;
+                
+      }
 		}
     &__content {
       font-size: 12px;
       line-height: calc(14 / 12);
       letter-spacing: 0.01em;
     }
-    &__btn {
-        padding: 10px 52px;
-    }
+    
 }
 
-
+.modal-form__btn {
+        padding: 10px 52px;
+        box-shadow:none;
+        transition: box-shadow 250ms $basicCubic;
+        &:hover,
+        &:focus {
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+    }

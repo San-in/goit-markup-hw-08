@@ -1,18 +1,19 @@
 .checkbox {
   position: relative;
-  padding: 0 12px;
-  height: 24px;
+  // padding: 0 12px;
+  min-height: 15px;
   margin-bottom: 30px;
   &__label {
-    display: flex;
-    height: 100%;
-    align-items: center;
+    // display: flex;
+    display: block;
+    // height: 100%;
+    // align-items: center;
     padding-left: 23px;
     transition: color 250ms $basicCubic 1s;
   }
   &__text {
-    font-size: 14px;
-    line-height: 1.71px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
   }
   &__link {
@@ -20,12 +21,16 @@
     text-decoration: underline;
   }
 }
+.checkbox__input {
+  position: absolute;
+}
 .checkbox__input--customize {
   position: absolute;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
   color:$textColorBold;
-  margin-left: -23px;
+  
 }
 .checkbox__on {
   opacity: 0;

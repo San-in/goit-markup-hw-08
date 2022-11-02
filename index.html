@@ -136,33 +136,74 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="works__list">
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/works-1.jpg"
-                alt="Декстопні додатки"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/works/work_1/work_1-370.webp 370w,
+                    ./images/main/works/work_1/work_1-740.webp 740w
+                  "
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/works/work_1/work_1-370.jpg 370w,
+                    ./images/main/works/work_1/work_1-740.jpg 740w
+                  "
+                  src="./images/main/works/work_1/work_1-370.jpg"
+                  alt="Декстопні додатки"
+                  sizes="33vw"
+                />
+              </picture>
+
               <p class="works__label">Декстопні додатки</p>
             </li>
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/works-2.jpg"
-                alt="Мобільні додатки"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/works/work_2/work_2-370.webp 370w,
+                    ./images/main/works/work_2/work_2-740.webp 740w
+                  "
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/works/work_2/work_2-370.jpg 370w,
+                    ./images/main/works/work_2/work_2-740.jpg 740w
+                  "
+                  src="./images/main/works/work_2/work_2-370.jpg"
+                  alt="Мобільні додатки"
+                  sizes="33vw"
+                />
+              </picture>
+
               <p class="works__label">Мобільні додатки</p>
             </li>
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/works-3.jpg"
-                alt="Дизайнерські рішення"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/works/work_3/work_3-370.webp 370w,
+                    ./images/main/works/work_3/work_3-740.webp 740w
+                  "
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/works/work_3/work_3-370.jpg 370w,
+                    ./images/main/works/work_3/work_3-740.jpg 740w
+                  "
+                  src="./images/main/works/work_3/work_3-370.jpg"
+                  alt="Дизайнерські рішення"
+                  sizes="33vw"
+                />
+              </picture>
               <p class="works__label">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -173,20 +214,27 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <!-- <img
-                class="team__img"
-                src="./images/igor.jpg"
-                alt="Дизайнер проектів"
-                width="254"
-                height="260"
-              /> -->
-              <img
-                class="team__img"
-                src="./images/mobile/igor.jpg"
-                alt="Дизайнер проектів"
-                width="450"
-                width="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/igor/igor-450.webp 450w,
+                    ./images/main/team/igor/igor-900.webp 900w
+                  "
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/team/igor/igor-450.jpg 450w,
+                    ./images/main/team/igor/igor-900.jpg 900w
+                  "
+                  src="./images/main/team/igor/igor-450.jpg"
+                  alt="Дизайнер проектів"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
+
               <div class="team__content">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__description">Product Designer</p>
@@ -243,20 +291,27 @@
               </div>
             </li>
             <li class="team__item">
-              <!-- <img
-                class="team__img"
-                src="./images/olga.jpg"
-                alt="Фронтенд розробник"
-                width="270"
-                height="260"
-              /> -->
-              <img
-                class="team__img"
-                src="./images/mobile/olga.jpg"
-                alt="Фронтенд розробник"
-                width="450"
-                width="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/olga/olga-450.webp 450w,
+                    ./images/main/team/olga/olga-900.webp 900w
+                  "
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/team/olga/olga-450.jpg 450w,
+                    ./images/main/team/olga/olga-900.jpg 900w
+                  "
+                  src="./images/main/team/olga/olga-450.jpg"
+                  alt="Фронтенд девелопер"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
+
               <div class="team__content">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p lang="en" class="team__description">Frontend Developer</p>
@@ -314,20 +369,27 @@
               </div>
             </li>
             <li class="team__item">
-              <!-- <img
-                class="team__img"
-                src="./images/mykola.jpg"
-                alt="Маркетинг"
-                width="270"
-                height="260"
-              /> -->
-              <img
-                class="team__img"
-                src="./images/mobile/mykola.jpg"
-                alt="Маркетинг"
-                width="450"
-                width="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/mykola/mykola-450.webp 450w,
+                    ./images/main/team/mykola/mykola-900.webp 900w
+                  "
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/team/mykola/mykola-450.jpg 450w,
+                    ./images/main/team/mykola/mykola-900.jpg 900w
+                  "
+                  src="./images/main/team/mykola/mykola-450.jpg"
+                  alt="Маркетинг"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
+
               <div class="team__content">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p lang="en" class="team__description">Marketing</p>
@@ -384,20 +446,27 @@
               </div>
             </li>
             <li class="team__item">
-              <!-- <img
-                class="team__img"
-                src="./images/myhaylo.jpg"
-                alt="ІЕ Дизайнер"
-                width="270"
-                height="260"
-              /> -->
-              <img
-                class="team__img"
-                src="./images/mobile/myhaylo.jpg"
-                alt="ІЕ Дизайнер"
-                width="450"
-                width="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/team/myhaylo/myhaylo-450.webp 450w,
+                    ./images/main/team/myhaylo/myhaylo-900.webp 900w
+                  "
+                  type="image/webp"
+                />
+
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/main/team/myhaylo/myhaylo-450.jpg 450w,
+                    ./images/main/team/myhaylo/myhaylo-900.jpg 900w
+                  "
+                  src="./images/main/team/myhaylo/myhaylo-450.jpg"
+                  alt="ІЕ Дизайнер"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
+
               <div class="team__content">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p lang="en" class="team__description">UI Designer</p>
