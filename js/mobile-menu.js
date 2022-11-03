@@ -28,15 +28,15 @@
       if (!e.matches) return;
       
       mobileMenu.classList.remove('is-open');
-      desktopMenu.classList.remove('is-hidden');
-      openMenuBtn.classList.toggle('is-hidden');
+      desktopMenu.classList.remove('visually-hidden');
+      openMenuBtn.classList.toggle('visually-hidden');
       openMenuBtn.setAttribute('aria-expanded', false);
       bodyScrollLock.enableBodyScroll(document.body);
     });
     window.matchMedia('(max-width: 768px)').addEventListener('change', e => {
       if (!e.matches) return;
-          desktopMenu.classList.toggle('is-hidden');
-          openMenuBtn.classList.remove('is-hidden');
+          desktopMenu.classList.toggle('visually-hidden');
+          openMenuBtn.classList.remove('visually-hidden');
           
           
     });
