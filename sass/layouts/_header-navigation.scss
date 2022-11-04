@@ -55,17 +55,22 @@
 }
 .active {
   color: $textColorAccent;
-  &::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
+  @media screen and (min-width: $widthTablet) {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+    
+      display: block;
+      height: 4px;
+      width: 100%;
+    
+      border-radius: 2px;
+      background-color: $bgColorAccent;
+    }
 
-  display: block;
-  height: 4px;
-  width: 100%;
 
-  border-radius: 2px;
-  background-color: $bgColorAccent;
-}
+  }
+
 }
 

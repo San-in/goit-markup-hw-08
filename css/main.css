@@ -153,7 +153,7 @@ img {
     display: none;
   }
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 700px) {
   .mobile-menu {
     overflow: auto;
   }
@@ -402,15 +402,17 @@ img {
 .active {
   color: #2196f3;
 }
-.active::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: #2196f3;
+@media screen and (min-width: 768px) {
+  .active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #2196f3;
+  }
 }
 
 .hero {
