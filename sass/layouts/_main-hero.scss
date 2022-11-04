@@ -6,17 +6,14 @@
     margin: 0 auto;
     text-align: center;
   
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image: $bgGradient,
       url(../images/mobile/hero-bg/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     
-    @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    @include pixelRatio {
+      background-image: $bgGradient,
       url(../images/mobile/hero-bg/hero-bg@2x.jpg);
     }
   

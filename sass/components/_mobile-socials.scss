@@ -1,17 +1,19 @@
 .mobile-social {
     display: flex;
-    @media screen and (max-width:400px) {
-        justify-content: center;
-        
-    }
+    // @media screen and (max-width:400px) {
+    //     justify-content: center;
+    // }
  
     &__link {
         font-weight: 500;
         font-size: 18px;
         line-height: 1.22;
         color: $textColorAccent;
-        @media screen and (max-width:374px) {
+        @media screen and (max-width:400px) {
             font-size: 16px;
+        }
+        @media screen and (max-width:340px) {
+            font-size: 14px;
         }
     }
 }
@@ -28,14 +30,13 @@
         border-right:none;
     }
     @media screen and (max-width:400px) {
-        @include respSize(padding-left,7,480,100vw);
-        @include respSize(padding-right,7,480,100vw);
-        
+        @include respSize(padding-left,5,480,100vw);
+        @include respSize(padding-right,5,480,100vw);
     }
-    @media screen and (max-width:374px) {
-        @include respSize(padding-left,4,480,100vw);
-        @include respSize(padding-right,4,480,100vw);
+    // @media screen and (max-width:374px) {
+    //     @include respSize(padding-left,4,480,100vw);
+    //     @include respSize(padding-right,4,480,100vw);
         
-    }
+    // }
     
 }

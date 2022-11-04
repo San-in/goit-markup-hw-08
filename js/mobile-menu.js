@@ -3,14 +3,15 @@
     const desktopMenu = document.querySelector('.desktop-menu');
     const openMenuBtn = document.querySelector('.mobile-btn--open');
     const closeMenuBtn = document.querySelector('.mobile-btn--close');
+    const bodyScroll = document.querySelector('.body');
 
   
     const toggleMenu = () => {
       const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
       openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-      mobileMenu.classList.toggle('is-open');
       mobileMenu.classList.toggle('is-hidden');
+      bodyScroll.classList.toggle('scroll');
 
 
       const scrollLockMethod = !isMenuOpen
@@ -27,18 +28,15 @@
     window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
       if (!e.matches) return;
       
-      mobileMenu.classList.remove('is-open');
       desktopMenu.classList.remove('visually-hidden');
-      openMenuBtn.classList.toggle('visually-hidden');
       openMenuBtn.setAttribute('aria-expanded', false);
       bodyScrollLock.enableBodyScroll(document.body);
     });
+    
     window.matchMedia('(max-width: 768px)').addEventListener('change', e => {
       if (!e.matches) return;
-          desktopMenu.classList.toggle('visually-hidden');
-          openMenuBtn.classList.remove('visually-hidden');
-          
-          
+          desktopMenu.classList.add('visually-hidden');
     });
+  
   })();
 

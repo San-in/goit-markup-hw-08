@@ -1,53 +1,71 @@
 
 .desktop-menu {
-  
-  @media screen and (max-width:$widthTablet) {
-    display: none;
+  display: none;
+  @media screen and (min-width: $widthTablet) {
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    margin-left: 87px;
+    
   }
 }
 .navigation {
   &__list {
-    // display: flex;
     @include respSize(margin-bottom,302);
+
     @media screen and (max-width:479px) {
       @include respSize(margin-bottom,250);
+    }
+
+    @media screen and (min-width: $widthTablet) {
+      margin-bottom: 0;
+      margin-right: 96px;
+      display: flex;
       
     }
   }
   
   &__item:not(:last-child) {
     @include respSize(margin-bottom,32);
-    // margin-right: 50px;
+    @media screen and (min-width: $widthTablet) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
   }
   &__link {
-    // position: relative;
-    // display: inline-block;
-    // line-height: calc(16 / 14);
-    font-size: 40px; // добавил
-    // padding-top: 32px; изменил
-    // padding-bottom: 32px; изменил
+    font-size: 40px; 
+  
     line-height: calc(47 / 40);
     text-align: center;
-   
     font-weight: 500;
     letter-spacing: 0.02em;
     color: $textColorBold;
     @include hover-accent();
+    
+    @media screen and (min-width: $widthTablet) {
+      display: inline-block;
+      position: relative;
+      line-height: calc(16 / 14);
+      font-size: 14px;
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
+  }
+
 }
 .active {
   color: $textColorAccent;
-//   &::after {
-//   content: '';
-//   position: absolute;
-//   bottom: 0;
+  &::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
 
-//   display: block;
-//   height: 4px;
-//   width: 100%;
+  display: block;
+  height: 4px;
+  width: 100%;
 
-//   border-radius: 2px;
-//   background-color: $bgColorAccent;
-// }
+  border-radius: 2px;
+  background-color: $bgColorAccent;
+}
 }
 

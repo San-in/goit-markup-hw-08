@@ -1,13 +1,19 @@
 .portfolio {
   &__filter {
     @include flex-center();
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 15px;
+    column-gap: 8px;
+    
   }
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-}
+// .filter__item:not(:last-child) {
+//   margin-right: 8px;
+// }
 .filter__btn {
   padding: 6px 22px;
 

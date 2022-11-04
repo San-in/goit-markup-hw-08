@@ -1,6 +1,5 @@
 .mobile-menu {
     position: fixed;
-    
     z-index: 10;
     top:0;
     width: 100vw;
@@ -8,22 +7,18 @@
     padding: 48px 40px;
 
     background-color:#ffffff;
-
     transition: opacity 250ms $basicCubic, visibility 250ms $basicCubic;
-
-    @media screen and (orientation:landscape) {
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        margin: -1px;
-        
+    @media screen and (min-width: $widthTablet) {
+        display: none
     }
+
+    @media screen and (max-height:600px) {
+        overflow: auto;
+    }
+
+    // @media screen and (orientation:landscape) {
+    //     display: none;
+    // }
 }
 .mobile-btn {
     margin-left: auto;
@@ -40,6 +35,13 @@
         top:10px;
         right: 15px;
         z-index: 15;
+    }
+    &--open {
+        @media screen and (min-width:$widthTablet) {
+            display: none;
+            
+        }
+    
     }
 }
 

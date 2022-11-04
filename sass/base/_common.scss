@@ -5,4 +5,7 @@
     letter-spacing: 0.03em;
     color: $textColorMain;
     background-color: #ffffff;
+    &.scroll{
+        overflow: hidden;
+    }
 }
