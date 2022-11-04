@@ -1,33 +1,32 @@
 
 .desktop-menu {
   display: none;
-  @media screen and (min-width: $widthTablet) {
+  @include mediaTablet() {
     display: flex;
     align-items:center;
     flex-direction: row;
     margin-left: 87px;
-    
   }
 }
 .navigation {
   &__list {
+    
     @include respSize(margin-bottom,302);
 
     @media screen and (max-width:479px) {
       @include respSize(margin-bottom,250);
     }
 
-    @media screen and (min-width: $widthTablet) {
+    @include mediaTablet() {
       margin-bottom: 0;
       margin-right: 96px;
       display: flex;
-      
     }
   }
   
   &__item:not(:last-child) {
     @include respSize(margin-bottom,32);
-    @media screen and (min-width: $widthTablet) {
+    @include mediaTablet() {
       margin-right: 50px;
       margin-bottom: 0;
     }
@@ -41,8 +40,8 @@
     letter-spacing: 0.02em;
     color: $textColorBold;
     @include hover-accent();
-    
-    @media screen and (min-width: $widthTablet) {
+
+    @include mediaTablet() {
       display: inline-block;
       position: relative;
       line-height: calc(16 / 14);
@@ -55,7 +54,7 @@
 }
 .active {
   color: $textColorAccent;
-  @media screen and (min-width: $widthTablet) {
+  @include mediaTablet() {
     &::after {
       content: '';
       position: absolute;

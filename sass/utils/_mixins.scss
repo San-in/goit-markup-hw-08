@@ -46,3 +46,25 @@
             }
 }
 
+@mixin fbCounter ($margin,$qntItem) {
+    flex-basis:calc((100% - $margin * $qntItem) / $qntItem);
+    
+}
+
+// @mixin mediaMobile {
+//     @media screen and (min-width: $widthMobile) {
+//         @content;
+//     }
+// }
+@mixin mediaTablet {
+    @media screen and (min-width: $widthTablet) {
+        @content;
+    }
+}
+
+@mixin mediaDesktop {
+    @media screen and (min-width: $widthDesktop) {
+        @content;
+    }
+}
+

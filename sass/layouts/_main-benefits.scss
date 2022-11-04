@@ -1,7 +1,11 @@
 .benefits {
     &__list {
-        // display: flex;
-        // flex-wrap: wrap;
+        @include mediaTablet() {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        }
+
         
     }
     &__img {
@@ -18,18 +22,23 @@
         text-transform: uppercase;
         color: $textColorBold;
         text-align: center;
-
-
-
-
+        @include mediaTablet() {
+            text-align: start;
+        }
     }
 }
 
 .benefits__item {
+    @include mediaTablet() {
+        @include fbCounter (15px,2);
+    }
     // flex-basis: calc((100% - 90px) / 4);
     &:not(:last-child) {
         // margin-right: 30px;
         margin-bottom: 30px;
+        @include mediaTablet() {
+            margin-bottom: 0;
+        }
     }
 }
 

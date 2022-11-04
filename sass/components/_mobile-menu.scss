@@ -5,10 +5,11 @@
     width: 100vw;
     height: 100%;
     padding: 48px 40px;
-
+ 
     background-color:#ffffff;
-    transition: opacity 250ms $basicCubic, visibility 250ms $basicCubic;
-    @media screen and (min-width: $widthTablet) {
+    transition: opacity 250ms $basicCubic 50ms, visibility 250ms $basicCubic;
+
+    @include mediaTablet(){
         display: none
     }
 
@@ -25,6 +26,7 @@
     width: 40px;
     height: 40px;
     @include hover-accent();
+    
     &__icons {
         fill:currentColor;
         background:transparent;
@@ -35,6 +37,8 @@
         top:10px;
         right: 15px;
         z-index: 15;
+        
+        
     }
     &--open {
         @media screen and (min-width:$widthTablet) {

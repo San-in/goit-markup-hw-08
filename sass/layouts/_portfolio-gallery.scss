@@ -30,7 +30,7 @@
       color: inherit;
     }
     &__img {
-      @extend %imgBlock;
+      width: 100%;
     }
     &__info {
       padding: 20px 24px;

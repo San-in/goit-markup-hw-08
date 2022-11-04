@@ -11,6 +11,7 @@
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
       openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
       mobileMenu.classList.toggle('is-hidden');
+      openMenuBtn.classList.toggle('is-hidden');
       bodyScroll.classList.toggle('scroll');
 
 
