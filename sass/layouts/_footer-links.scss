@@ -1,5 +1,8 @@
 .footer-links {
     margin-bottom: 60px;
+    @include mediaTablet() {
+        margin-bottom: 0;
+    }
 
     &__appeal {
         display: inline-block;

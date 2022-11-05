@@ -6,11 +6,24 @@
     //     flex-basis: calc((100% - 90px) / 3);
     //     margin: 15px;
     // }
+    @include mediaTablet() {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+  }
+
+
 }
 .card {
     transition: box-shadow 250ms $basicCubic;
+    @include mediaTablet() {
+    @include fbCounter(30px,2);
+    }
     &:not(:last-child) {
       margin-bottom: 30px;
+      @include mediaTablet() {
+        margin-bottom: 0;
+      }
     }
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -20,6 +33,7 @@
     &__wrap {
       position: relative;
       overflow: hidden;
+  
     }
     &__description {
       font-size: 18px;
@@ -30,7 +44,8 @@
       color: inherit;
     }
     &__img {
-      width: 100%;
+      
+      
     }
     &__info {
       padding: 20px 24px;

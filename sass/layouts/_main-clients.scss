@@ -24,9 +24,15 @@
 }
 
 .clients__item {
-    flex-basis: calc((100% - 60px) / 2);
-    // width: 170px;
     height: 92px;
+    @include fbCounter(30px,2);
+    @include mediaTablet() {
+        @include fbCounter(30px,3);
+    }
+
+        
+    
+    // width: 170px;
     // &:not(:last-child) {
     //     margin-right: 30px;
     // }

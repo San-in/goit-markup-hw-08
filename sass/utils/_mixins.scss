@@ -46,8 +46,8 @@
             }
 }
 
-@mixin fbCounter ($margin,$qntItem) {
-    flex-basis:calc((100% - $margin * $qntItem) / $qntItem);
+@mixin fbCounter ($gap,$qntItem) {
+    flex-basis:calc((100% - $gap * ($qntItem - 1)) / $qntItem);
     
 }
 

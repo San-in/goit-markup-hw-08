@@ -14,10 +14,25 @@
     &__text--accent {
         color:$textColorAccent
     }
+    &__contact {
+        @include mediaTablet() {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            margin-bottom: 60px;
+
+        }
+
+    }
 }
 .address {
     // margin-right: 70px;
     margin-bottom: 60px;
+    @include mediaTablet() {
+        margin-right: 165px;
+        margin-bottom: 0;
+    }
+
     &__list {
         color: #ffffff;
     }

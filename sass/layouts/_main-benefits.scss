@@ -30,7 +30,7 @@
 
 .benefits__item {
     @include mediaTablet() {
-        @include fbCounter (15px,2);
+        @include fbCounter (30px,2);
     }
     // flex-basis: calc((100% - 90px) / 4);
     &:not(:last-child) {
