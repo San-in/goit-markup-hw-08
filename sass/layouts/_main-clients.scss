@@ -29,11 +29,7 @@
     @include mediaTablet() {
         @include fbCounter(30px,3);
     }
-
-        
-    
-    // width: 170px;
-    // &:not(:last-child) {
-    //     margin-right: 30px;
-    // }
+    @include mediaDesktop() {
+        @include fbCounter(30px,6);
+    }
 }

@@ -1,47 +1,52 @@
 .hero {
-    // max-width: 1600px;
-    // padding: 200px 0;
-    max-width: $widthMobile;
-    padding: 118px 0;
-    margin: 0 auto;
-    text-align: center;
-    @include pixelRatio {
-      background-image: $bgGradient,
-      url(../images/mobile/hero-bg/hero-bg@2x.jpg);
-    }
-  
-    background-image: $bgGradient,
-      url(../images/mobile/hero-bg/hero-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  max-width: $widthMobile;
+  padding: 118px 0;
+  margin: 0 auto;
+  text-align: center;
+  @include pixelRatio {
+    background-image: $bgGradient, url(../images/main/hero-bg/mobile/hero-bg@2x.jpg);
+  }
 
-    @include mediaTablet() {
-      max-width: $widthTablet;
-      background-image: $bgGradient,
-      url(../images/tablet/hero-bg/hero-bg.jpg);
-      @include pixelRatio {
-        background-image: $bgGradient,
-        url(../images/tablet/hero-bg/hero-bg2@.jpg);
-      }
+  background-image: $bgGradient, url(../images/main/hero-bg/mobile/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include mediaTablet() {
+    max-width: $widthTablet;
+    @include pixelRatio {
+      background-image: $bgGradient, url(../images/main/hero-bg/tablet/hero-bg2@.jpg);
     }
-  
-  
-    &__title {
-        // max-width: 696px;
-        // font-size: 44px;
-        // line-height: calc(60 / 44);
-        max-width: 360px;
-        margin: 0 auto 30px;
-        font-size: 26px;
-        line-height: 1.62;
-        font-weight: 900;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: #ffffff;
+    background-image: $bgGradient, url(../images/main/hero-bg/tablet/hero-bg.jpg);
+  }
+  @include mediaDesktop() {
+    max-width: 1600px;
+    padding: 200px 0;
+    @include pixelRatio {
+      background-image: $bgGradient, url(../images/main/hero-bg/desktop/hero-bg@2x.jpg);
     }
-    &__btn {
-      padding: 10px 24px;
-        // padding: 10px 32px;
+    background-image: $bgGradient, url(../images/main/hero-bg/desktop/hero-bg.jpg);
+  }
+
+  &__title {
+    max-width: 360px;
+    margin: 0 auto 30px;
+    font-size: 26px;
+    line-height: 1.62;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    @include mediaDesktop() {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: calc(60 / 44);
     }
   }
+  &__btn {
+    padding: 10px 24px;
+    @include mediaDesktop() {
+      padding: 10px 32px;
+    }
+  }
+}

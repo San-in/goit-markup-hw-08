@@ -1,14 +1,20 @@
 .section {
-    // padding: 94px 0;
-    padding: 60px 0;
-    &__title {
+  padding: 60px 0;
+  @include mediaDesktop() {
+    padding: 94px 0;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    text-align: center;
+    color: $textColorBold;
+    @include mediaDesktop() {
+      font-size: 36px;
+      line-height: calc(42 / 36);
       margin-bottom: 50px;
-  
-      font-size: 28px;
-      line-height: calc(33 / 28);
-      // font-size: 36px;
-      // line-height: calc(42 / 36);
-      text-align: center;
-      color: $textColorBold;
     }
   }
+}

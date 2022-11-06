@@ -1,20 +1,33 @@
 .checkbox {
   position: relative;
-  // padding: 0 12px;
   min-height: 15px;
   margin-bottom: 30px;
+  @include mediaDesktop() {
+    padding: 0 12px;
+    text-align: start;
+  }
+
+
   &__label {
     // display: flex;
     display: block;
     // height: 100%;
     // align-items: center;
-    padding-left: 23px;
+    padding-left: 24px;
     transition: color 250ms $basicCubic 1s;
+    @include mediaDesktop() {
+      position: relative;
+    }
   }
   &__text {
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.03em;
+    @include mediaDesktop() {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+
+    }
   }
   &__link {
     color: $textColorAccent;

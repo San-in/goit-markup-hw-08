@@ -1,62 +1,68 @@
 .footer {
-    background-color: $bgColorDarkGrey;
-    padding: 60px 0;
-    &__wrap {
-        text-align: center;
-    // display: flex;
-    // align-items: baseline;
+  background-color: $bgColorDarkGrey;
+  padding: 60px 0;
+  &__wrap {
+    text-align: center;
+    @include mediaDesktop() {
+      text-align: start;
+      display: flex;
+      align-items:baseline;
     }
-    &__logo {
+  }
+  &__logo {
     display: inline-block;
     margin-bottom: 20px;
     color: #ffffff;
+  }
+  &__text--accent {
+    color: $textColorAccent;
+  }
+  &__contact {
+    @include mediaTablet() {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      margin-bottom: 60px;
     }
-    &__text--accent {
-        color:$textColorAccent
+    @include mediaDesktop() {
+      margin-bottom: 0;
     }
-    &__contact {
-        @include mediaTablet() {
-            display: flex;
-            align-items: baseline;
-            justify-content: center;
-            margin-bottom: 60px;
-
-        }
-
-    }
+  }
 }
 .address {
-    // margin-right: 70px;
-    margin-bottom: 60px;
-    @include mediaTablet() {
-        margin-right: 165px;
-        margin-bottom: 0;
-    }
+  margin-bottom: 60px;
+  @include mediaTablet() {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
+  @include mediaDesktop() {
+    margin-right: 93px;
+  }
 
-    &__list {
-        color: #ffffff;
-    }
+  &__list {
+    color: #ffffff;
+  }
 }
 .address__link {
-    color:inherit;
-    .address__item:nth-child(n + 2) & {
-        @include hover-accent();
-    }
+  color: inherit;
+  .address__item:nth-child(n + 2) & {
+    @include hover-accent();
+  }
 }
 
 .address__item {
-    // &:not(:last-child) {
-    //     margin-bottom: 9px;
-    // }
+  // &:not(:last-child) {
+  //     margin-bottom: 9px;
+  // }
 
-    &:first-child {
-        margin-bottom: 5px;
-    }
-    &:nth-child(2) {
-        margin-bottom: 8px;
-    }
+  &:first-child {
+    margin-bottom: 5px;
+  }
+  &:nth-child(2) {
+    margin-bottom: 8px;
+  }
 
-    &:nth-child(n + 2){
-        opacity: 0.6;
-    }
+  &:nth-child(n + 2) {
+    opacity: 0.6;
+  }
 }

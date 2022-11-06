@@ -32,9 +32,10 @@
     @include mediaTablet() {
         @include fbCounter (30px,2);
     }
-    // flex-basis: calc((100% - 90px) / 4);
+    @include mediaDesktop() {
+        @include fbCounter (30px,4);
+    }
     &:not(:last-child) {
-        // margin-right: 30px;
         margin-bottom: 30px;
         @include mediaTablet() {
             margin-bottom: 0;

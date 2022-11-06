@@ -4,6 +4,7 @@
     const openMenuBtn = document.querySelector('.mobile-btn--open');
     const closeMenuBtn = document.querySelector('.mobile-btn--close');
     const bodyScroll = document.querySelector('.body');
+    const sectionWorks = document.querySelector('.works');
 
   
     const toggleMenu = () => {
@@ -37,6 +38,15 @@
     window.matchMedia('(max-width: 768px)').addEventListener('change', e => {
       if (!e.matches) return;
           desktopMenu.classList.add('visually-hidden');
+    });
+
+    window.matchMedia('(max-width: 1199px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      sectionWorks.classList.add('visually-hidden');
+    });
+    window.matchMedia('(min-width: 1200px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      sectionWorks.classList.remove('visually-hidden');
     });
   
   })();

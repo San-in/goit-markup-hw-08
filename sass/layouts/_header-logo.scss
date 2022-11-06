@@ -1,19 +1,19 @@
 .header {
-    border-bottom: 1px solid #ececec;
-    &__conteiner {
-        @include flex-center();
-        position: relative;
-            }
-    &__logo {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        // margin-right: 93px;
-        // padding-top: 24px;
-        // padding-bottom: 25px;
-        color: #000000;
+  border-bottom: 1px solid #ececec;
+  &__conteiner {
+    @include flex-center();
+    position: relative;
+  }
+  &__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #000000;
+    @include mediaDesktop() {
+      padding-top: 24px;
+      padding-bottom: 25px;
     }
-    &__text--accent {
-        color:$textColorAccent;
-    }
+  }
+  &__text--accent {
+    color: $textColorAccent;
+  }
 }
-
