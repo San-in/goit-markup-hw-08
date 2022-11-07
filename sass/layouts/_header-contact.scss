@@ -22,25 +22,6 @@
   // &__item:not(:last-child) {
   //   // margin-right: 50px;
   // }
-  &__item:first-child {
-    @include respSize(margin-bottom, 32);
-
-    font-size: 34px;
-    line-height: calc(40 / 34);
-    color: $textColorAccent;
-    @media screen and (max-width: 375px) {
-      font-size: 26px;
-    }
-    @include mediaTablet() {
-      margin-bottom: 10px;
-      font-size: 12px;
-      line-height: calc(14 / 12);
-      color: $textColorMain;
-    }
-    @include mediaDesktop() {
-      margin-bottom: 0;
-    }
-  }
   &__link {
     color: inherit;
     @include mediaTablet() {
@@ -75,5 +56,33 @@
     @include mediaDesktop() {
       margin-right: 10px;
     }
+  }
+}
+.contact-header__item {
+
+  &:first-child {
+    @include respSize(margin-bottom, 32);
+
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    color: $textColorAccent;
+    @media screen and (max-width: 375px) {
+      font-size: 26px;
+    }
+    @include mediaTablet() {
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      color: $textColorMain;
+    }
+    @include mediaDesktop() {
+      font-size: 14px;
+      line-height: calc(16 / 14);
+      margin-bottom: 0;
+    }
+  }
+  @include mediaDesktop() {
+    font-size: 14px;
+    line-height: calc(16 / 14);
   }
 }

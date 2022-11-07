@@ -202,30 +202,6 @@ img {
     line-height: 1.1428571429;
   }
 }
-.contact-header__item:first-child {
-  margin-bottom: 4.0201005025vh;
-  font-size: 34px;
-  line-height: 1.1764705882;
-  color: #2196f3;
-}
-@media screen and (max-width: 375px) {
-  .contact-header__item:first-child {
-    font-size: 26px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contact-header__item:first-child {
-    margin-bottom: 10px;
-    font-size: 12px;
-    line-height: 1.1666666667;
-    color: #757575;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact-header__item:first-child {
-    margin-bottom: 0;
-  }
-}
 .contact-header__link {
   color: inherit;
 }
@@ -273,6 +249,39 @@ img {
 @media screen and (min-width: 1200px) {
   .contact-header__icon {
     margin-right: 10px;
+  }
+}
+
+.contact-header__item:first-child {
+  margin-bottom: 4.0201005025vh;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  color: #2196f3;
+}
+@media screen and (max-width: 375px) {
+  .contact-header__item:first-child {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-header__item:first-child {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.1666666667;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-header__item:first-child {
+    font-size: 14px;
+    line-height: 1.1428571429;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-header__item {
+    font-size: 14px;
+    line-height: 1.1428571429;
   }
 }
 
@@ -408,7 +417,6 @@ img {
 }
 
 .hero {
-  max-width: 480px;
   padding: 118px 0;
   margin: 0 auto;
   text-align: center;
@@ -426,7 +434,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero-bg/tablet/hero-bg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero-bg/tablet/hero-bg.jpg);
   }
@@ -850,11 +857,22 @@ img {
 }
 .card__link {
   color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 .card__info {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .card__title {
   margin-bottom: 4px;

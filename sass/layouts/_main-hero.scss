@@ -1,5 +1,5 @@
 .hero {
-  max-width: $widthMobile;
+  // max-width: $widthMobile;
   padding: 118px 0;
   margin: 0 auto;
   text-align: center;
@@ -13,7 +13,7 @@
   background-position: center;
 
   @include mediaTablet() {
-    max-width: $widthTablet;
+    // max-width: $widthTablet;
     @include pixelRatio {
       background-image: $bgGradient, url(../images/main/hero-bg/tablet/hero-bg2@.jpg);
     }
