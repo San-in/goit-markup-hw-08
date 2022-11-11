@@ -1,5 +1,7 @@
 .works {
+  position: absolute;
   @include mediaDesktop() {
+    position: static;
     padding-top: 0;
     &__list {
       display: flex;
